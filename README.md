@@ -19,7 +19,7 @@ This Proof of Concept (POC) demonstrates the persistence of data in a form, even
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/kameiaky/form-persistent-poc.git
 ```
 
 2. Open the project folder:
@@ -27,8 +27,16 @@ git clone https://github.com/your-username/your-repo.git
 ```shell
 cd your-repo
 ```
-3. Open the index.html file in your preferred web browser.
-4. Start filling out the form fields, even without an internet connection.
+3. Install the dependencies
+
+```shell
+npm install
+```
+4. Start the project and filling out the form fields, even without an internet connection.
+
+```shell
+npm run dev
+```
 5. If the connection is lost, don't worry! The entered data will be saved locally.
 6. When the internet connection is restored, the saved data will automatically populate the form fields.
 
