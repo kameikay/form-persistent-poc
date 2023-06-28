@@ -1,5 +1,42 @@
-# POC - Persistência de dados no formulário
+# POC - Persistence of Data in the Form
 
-- Simular quando iniciar o preenchimento de um formulário e perde conexão com a internet
-- Quando voltar a conexão, pegar os dados que foram persistidos e preencher o formulário
-- Deve identificar os dados por um identificado único (nesta POC, será o e-mail)
+This Proof of Concept (POC) demonstrates the persistence of data in a form, even when the internet connection is lost. When the connection is restored, the data that was previously saved will be retrieved and used to populate the form automatically. The data is identified by a unique identifier, which in this POC is the email.
+
+## Features
+
+- Offline Form Filling: Start filling out the form even without an internet connection.
+- Data Persistence: The entered data is automatically saved locally, ensuring it is not lost during connection outages.
+- Automatic Data Retrieval: When the internet connection is reestablished, the saved data is retrieved and used to populate the form fields.
+- Unique Identifier: The email serves as the unique identifier for identifying and retrieving the persisted data.
+
+## Technologies Used
+
+- Typescript (ReactJS) + TailwindCSS
+- Local Storage: A browser API used to store and retrieve data locally.
+
+## Usage
+
+1. Clone the repository:
+
+```shell
+git clone https://github.com/your-username/your-repo.git
+```
+
+2. Open the project folder:
+
+```shell
+cd your-repo
+```
+3. Open the index.html file in your preferred web browser.
+4. Start filling out the form fields, even without an internet connection.
+5. If the connection is lost, don't worry! The entered data will be saved locally.
+6. When the internet connection is restored, the saved data will automatically populate the form fields.
+
+## Limitations
+
+- This POC focuses on the client-side implementation and assumes the use of modern web browsers with support for Local Storage.
+- The form data is stored locally on the user's device, and no data synchronization with a server or across multiple devices is implemented.
+- Security considerations such as data encryption, validation, and sanitization are not addressed in this POC. These aspects should be carefully evaluated and implemented in a production-ready solution.
+
+## License
+This project is licensed under the MIT License.
